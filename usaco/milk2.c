@@ -4,10 +4,6 @@ PROG: milk2
 LANG: C
 */
 
-/**
- * NOTE: this is not a complete search algorithm
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
