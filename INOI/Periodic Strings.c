@@ -39,7 +39,7 @@ int periodicStrCount(int N, int M)
 	int total = 0;
 	for(int d = 1; d < N; d++)
 	{
-		if(d % i == 0)
+		if(N % d == 0)
 		{
 			total += modMexp(d, M) - periodicStrCount(d, M);
 			total %= M;
