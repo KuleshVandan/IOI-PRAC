@@ -34,14 +34,14 @@ int modMexp(int n, int M)
 	return result;
 }
 
-int periodicStrCount(int d, int M)
+int periodicStrCount(int N, int M)
 {
 	int total = 0;
-	for(int i = 1; i < d; i++)
+	for(int d = 1; d < N; d++)
 	{
 		if(d % i == 0)
 		{
-			total += modMexp(i, M) - periodicStrCount(i, M);
+			total += modMexp(d, M) - periodicStrCount(d, M);
 			total %= M;
 		}
 	}
